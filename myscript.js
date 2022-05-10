@@ -1,17 +1,18 @@
-function computerPlay(){
-    let computerChoice = () => {
-      let randomNumber = (Math.floor(Math.random() * 3));
-        if(randomNumber === 0){
+function computerPlay() {
+    const computerChoice = () => {
+        const randomNumber = (Math.floor(Math.random() * 3));
+        if (randomNumber === 0) {
             return "Rock";
-        } else if(randomNumber === 1){
+        } else if (randomNumber === 1) {
             return "Paper";
-        }else{
+        } else if(randomNumber === 2){
             return "Scissors";
         }
-  
+
     };
-    console.log(computerPlay());
+
 }
+console.log(computerPlay());
 
 /*function playRound(playerSelection, computerSelection){
 
